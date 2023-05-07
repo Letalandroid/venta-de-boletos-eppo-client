@@ -1,0 +1,10 @@
+@import './Card.module';
+@import './Precios.module.scss';
+
+.container {
+    height: 100vh;
+    background-image: url('../../assets/bg_header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,35 @@
+$color-prin: #ed3136;
+$color-hov: #c42b30;
+$border: 15px;
+
+.container__precios {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	& > div {
+		display: flex;
+		flex-direction: column;
+
+		& > img {
+			border-radius: $border $border 0 0;
+		}
+
+		& > a {
+			text-align: center;
+			background-color: $color-prin;
+			padding: 15px 0;
+			color: #fff;
+			text-decoration: none;
+			font-weight: bold;
+			border-radius: 0 0 $border $border;
+            border: 0 solid $color-hov;
+            transition: border .1s;
+
+            &:hover {
+                border: 5px solid $color-hov;
+            }
+		}
+	}
+}
